@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vacancy List</title>
+</head>
+<body>
+{% for i in vacancy%}
+<div>
+    {{ i.author.username }}: {{ i.description }}
+</div>
+{% endfor %}
+</body>
+</html>
